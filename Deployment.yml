@@ -16,7 +16,7 @@ spec:
   spec:
     containers:
     - name: productscontainer
-      image: anchu72docker/product:latest
+      image: anchu72docker/products:latest
       ports:
       - containerPort: 8080
    env:
