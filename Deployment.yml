@@ -32,6 +32,8 @@ spec:
                 secretKeyRef:
                   name: rds-secret
                   key: password
+            - name: SPRING_JPA_HIBERNATE_DDL_AUTO
+               value: "update"
 ---
 apiVersion: v1
 kind: Service
