@@ -18,19 +18,19 @@ spec:
     - name: productscontainer
       image: anchu72docker/products:latest
       ports:
-      - containerPort: 8080
-   env:
-        - name: SPRING_DATASOURCE_URL
+       - containerPort: 8080
+       env:
+         - name: SPRING_DATASOURCE_URL
           value: "jdbc:mysql://database-1.c5kaq8uocoac.ap-south-1.rds.amazonaws.com/vinodses_ecomm"
           
-        - name: SPRING_DATASOURCE_USERNAME
-          valueFrom:
+         - name: SPRING_DATASOURCE_USERNAME
+           valueFrom:
             secretKeyRef:
               name: rds-secret
               key: username
               
-        - name: SPRING_DATASOURCE_PASSWORD
-          valueFrom:
+          - name: SPRING_DATASOURCE_PASSWORD
+           valueFrom:
             secretKeyRef:
               name: rds-secret
               key: password
