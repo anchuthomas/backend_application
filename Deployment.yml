@@ -21,7 +21,7 @@ spec:
        - containerPort: 8080
       env:
             - name: SPRING_DATASOURCE_URL
-              value: "jdbc:mysql://database-1.c5kaq8uocoac.ap-south-1.rds.amazonaws.com/vinodses_ecomm"
+              value: "jdbc:mysql://database-1.c5kaq8uocoac.ap-south-1.rds.amazonaws.com/ecomm_store"
             - name: SPRING_DATASOURCE_USERNAME
               valueFrom:
                 secretKeyRef:
