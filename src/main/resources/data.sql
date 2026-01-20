@@ -4,7 +4,7 @@
 DROP SCHEMA IF EXISTS `ecomm_store`;
 
 CREATE SCHEMA `ecomm_store`;
-USE `vinodses_ecomm` ;
+USE `ecomm_store` ;
 
 -- -----------------------------------------------------
 -- Table `fullstack`.`product_category`
