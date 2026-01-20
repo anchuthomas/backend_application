@@ -29,6 +29,5 @@ spec:
   selector:
    app: products
   ports:
-   - port: 80
      targetPort: 8080
 ...
